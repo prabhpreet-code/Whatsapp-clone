@@ -1,0 +1,37 @@
+.sidebarChat {
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.sidebarChat:hover {
+  background-color: #ebebeb;
+}
+
+.sidebarChat:hover > .MuiSvgIcon-root {
+  visibility: visible;
+}
+
+.sidebarChat__info > h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  pointer-events: none;
+}
+
+.sidebarChat__info {
+  margin-left: 15px;
+  border-bottom: 1px solid #e7e5e5;
+  padding-bottom: 10px;
+  line-height: 10px;
+  padding-top: 5px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.sidebarChat__info > p {
+  pointer-events: none;
+}
+
+.sidebarChat > .MuiAvatar-root {
+  pointer-events: none;
+}

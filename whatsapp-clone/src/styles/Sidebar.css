@@ -1,0 +1,265 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.35;
+}
+
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-right: 1px solid lightgray;
+  position: relative;
+}
+
+.sidebar__header > .MuiSvgIcon-root {
+  margin-right: 2vw;
+  font-size: 24px !important;
+}
+
+.sidebar__search {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  height: 39px;
+  padding: 10px;
+}
+
+.sidebar__searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.sidebar__searchContainer > .MuiSvgIcon-root {
+  color: gray;
+  padding: 10px;
+}
+
+.sidebar__searchContainer > input {
+  border: none;
+  outline-width: 0;
+  margin-left: 10px;
+}
+
+.sidebar__chats {
+  flex: 1;
+  background-color: white;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  position: relative;
+}
+
+.sidebar__chats::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar__menu {
+  display: flex;
+  height: 80px;
+  position: absolute;
+  right: 15px;
+  top: 60px;
+  background-color: white;
+  border-radius: 5px;
+  width: 130px;
+  text-align: start;
+  box-shadow: 2px 2px 6px 2px rgb(170 170 170 / 75%);
+  z-index: 1;
+}
+
+.sidebar__menu > ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.sidebar__menu > ul > li {
+  padding: 5px;
+  margin-top: 5px;
+  padding-left: 12px;
+  cursor: pointer;
+}
+
+.sidebar__menu > ul > li:hover {
+  background-color: #ebebeb;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  flex: 0.35;
+  background-color: #d8d7d7;
+}
+
+.profile__username {
+  background-color: white;
+  height: 100px;
+  box-shadow: 1px 1px 3px 1px #cac7c7;
+  margin-top: 20px;
+}
+
+.profile > p {
+  font-size: 12px;
+  text-align: center;
+  color: #7b8592;
+  margin-top: 20px;
+}
+
+.profile__changeProfile > img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.profile__opacity {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+label > input {
+  display: none;
+}
+label {
+  cursor: pointer;
+}
+#imageName {
+  color: green;
+}
+
+.profile__uploadButton {
+  position: absolute;
+}
+
+.profile__uploadButton > label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 20px;
+}
+/* 
+.profile__photo :hover ~ .profile__opacity {
+  visibility: visible;
+} */
+
+.profile__changeProfile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__nav {
+  display: flex;
+  height: 80px;
+  background-color: #087f71;
+  align-items: end;
+  color: white;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  justify-content: space-between;
+}
+
+.profile__nav > div > p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+.profile__nav > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.profile__nav__innerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.profile__username > p {
+  margin-left: 25px;
+  font-size: 12px;
+  color: #087f71;
+  font-weight: 500;
+  padding-top: 15px;
+}
+
+.profile__usernameEdit > input {
+  margin-left: 20px;
+  background-color: transparent;
+  outline-width: 0;
+  border: none;
+  border-bottom: 2px solid #128c7e;
+  height: 25px;
+  flex: 1;
+}
+
+.profile__usernameEdit > .MuiSvgIcon-root {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.profile__usernameEdit {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* .sidebar__newContact > * {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar__newContact {
+  background: #e6e6e6;
+  height: 50%;
+  width: 100%;
+  /* margin-top: -20px; */
+/* top: -10px; */
+/* position: absolute;
+}
+
+.sidebar__newContactHeader {
+  margin-right: 5px;
+  justify-content: space-between;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.sidebar__newContactName {
+  margin-top: 20px;
+}
+
+.sidebar__newContactNumber {
+  margin-top: 20px;
+}
+
+.sidebar__newContactNumber > input {
+  margin-left: 10px;
+  background-color: transparent;
+  outline-width: 0;
+  border: none;
+  border-bottom: 2px solid #128c7e;
+}
+
+.sidebar__newContactName > input {
+  margin-left: 10px;
+  background-color: transparent;
+  outline-width: 0;
+  border: none;
+  border-bottom: 2px solid #128c7e;
+}
+
+.MuiSvgIcon-root {
+  cursor: pointer;
+} */
