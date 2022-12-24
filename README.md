@@ -1,1 +1,1 @@
-# Whatsapp-clone
+# WhatChat - A chatting web app
